@@ -149,10 +149,9 @@ prediction = int(prediction_prob > 0.5)
 # ==========================================
 # 6. MAIN CONTENT AREA
 # ==========================================
-tab1, tab2, tab3 = st.tabs(["🩺 Diagnostics", "🧠 AI Explainability (SHAP)", "📊 Model Performance"])
+tab1, tab2, tab3 = st.tabs(["Diagnostics", "AI Explainability (SHAP)", "Model Performance"])
 
 with tab1:
-    st.markdown('<div class="glass-card">', unsafe_allow_html=True)
     st.markdown("### 🔍 Real-Time AI Diagnosis")
     
     col1, col2 = st.columns([1, 1])
@@ -183,11 +182,8 @@ with tab1:
         ))
         fig.update_layout(height=250, margin=dict(l=10, r=10, t=40, b=10), paper_bgcolor="rgba(0,0,0,0)", font={'color': "white"})
         st.plotly_chart(fig, use_container_width=True)
-        
-    st.markdown('</div>', unsafe_allow_html=True)
 
 with tab2:
-    st.markdown('<div class="glass-card">', unsafe_allow_html=True)
     st.markdown("### 🧠 Why did the AI make this prediction?")
     st.markdown("We use **SHAP (SHapley Additive exPlanations)** to break down exactly how each of your vital signs influenced the final risk probability.")
     
@@ -220,10 +216,8 @@ with tab2:
     )
     
     st.plotly_chart(fig2, use_container_width=True)
-    st.markdown('</div>', unsafe_allow_html=True)
 
 with tab3:
-    st.markdown('<div class="glass-card">', unsafe_allow_html=True)
     st.markdown("### 📊 Under the Hood: Model Performance")
     
     col1, col2, col3 = st.columns(3)
@@ -238,6 +232,5 @@ with tab3:
         st.markdown('<div class="metric-value">0.9513</div>', unsafe_allow_html=True)
         
     st.markdown("<br><p style='color: var(--text-muted);'>Trained on the UCI Heart Disease Dataset. Features 80/20 chronological split with standard scaling.</p>", unsafe_allow_html=True)
-    st.markdown('</div>', unsafe_allow_html=True)
 
 st.markdown("<div style='text-align: center; color: var(--text-muted); margin-top: 50px;'>Built with ❤️ by Ammar Akbar - DevelopersHub AI/ML Internship</div>", unsafe_allow_html=True)
