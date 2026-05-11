@@ -54,6 +54,16 @@ heart-disease-prediction/
 2.  **Number of major vessels (`ca`)** and **Thalassemia (`thal`)** are significant secondary indicators.
 3.  **Maximum Heart Rate Achieved (`thalach`)** shows a clear pattern where lower max heart rate under exercise correlates with higher risk.
 
+## 📸 Screenshots
+
+<p align="center">
+  <img src="assets/ss1.png" width="45%" />
+  <img src="assets/ss2.png" width="45%" />
+  <img src="assets/ss3.png" width="45%" />
+  <img src="assets/ss4.png" width="45%" />
+  <img src="assets/ss5.png" width="45%" />
+</p>
+
 ## 🚀 Quick Start
 
 ### Local Setup
